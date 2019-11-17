@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+
+    </head>
+
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: center;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
+    <style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+  </style>
+    <style>
+      button{
+        position:relative;
+        left:32%;
+        top:50%;
+      }
+    </style>
+    <style>
+      .button{
+        color:black;
+        font-family: Georgia;
+        font-size: 175px;
+        background-color:green;
+        border-color: black;
+        border: black;
+        padding: 30px 40px;
+        text-align: center;
+        cursor:pointer;
+      }
+    </style>
+    <style>
+    .button
+    {
+    position:relative;
+    margin-top:180px;
+    }
+    </style>
+
+    <body style="background-color:lightblue">
+      
+	  <ul>
+        <li><a href="game_about.html">About</a></li>
+        <li><a href="game_info.html">Info</a></li>
+        <li><a href="game_start.html">Home</a></li>
+
+      </ul>
+
+    }
+      <button class="button" onclick="randomSite();">PLAY!</button>
+
+      <img src="http://pngimg.com/uploads/cloud/cloud_PNG17.png" alt="clouds">
+	  
+	  <script>
+			var sites = [
+			'game_question1.html',
+			'game_question2.html',
+			'game_question3.html',
+			'game_question4.html'
+			];
+	
+			function randomSite() {
+			var i = parseInt(Math.random() * sites.length);
+			location.href = sites[i];
+			}
+		</script>
+
+    </body>
+  </html>
+
